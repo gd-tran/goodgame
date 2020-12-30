@@ -2,17 +2,23 @@ const path = require('path');
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: './client/index.js',
+  entry: {
+    'index' : './client/index.js',
+  },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: __dirname + './build',
+    publicPath: '/',
     filename: 'bundle.js',
   },
   devServer: {
-    publicPath: path.resolve(__dirname, '/build'),
+    publicPath:  '/build',
+    compress: true,
     port: 8080,
     proxy: {
-      '/': 'http://localhost:3000',
+      '/': {
+      target: 'http://localhost:3000/',
     },
+  },
     hot: true,
   },
   module: {
