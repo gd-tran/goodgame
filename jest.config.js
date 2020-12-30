@@ -1,3 +1,4 @@
 module.exports = {
-    verbose: true
+    verbose: true,
+    setupFiles: ['./tests/setupTests.js']
 }
