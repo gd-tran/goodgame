@@ -24,11 +24,11 @@ class Dashboard extends React.Component {
     const dashboardStyle = {
       height: '100%',
       width: '100%',
-      background: '#DB2955',
+      background: '#4e8d7c',
     };
 
     return (
-      <div style={dashboardStyle}>
+      <div id="dashboard" style={dashboardStyle}>
         <h1>Welcome to GoodGame Reviews</h1>
         <MainContainer
           result={this.state.result}

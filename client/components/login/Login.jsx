@@ -55,7 +55,7 @@ class Login extends React.Component {
     return (
       <div>
         <h1>GG</h1>
-        <form>
+        <form id="main">
           <input
             onChange={(e) => this.handleChange(e)}
             type="text"
@@ -79,12 +79,13 @@ class Login extends React.Component {
           value="Login"
           />
           </Link>
-          <input
+          <input style= {{}}
             onClick={this.submitChange}
             type="submit"
             value="Signup"
           />
         </form>
+        <img src="https://www.wallpaperup.com/uploads/wallpapers/2012/08/11/10567/0f7dbd71eac4d45c59240484af1f96b1-500.jpg" />
       </div>
     );
   }

@@ -7,10 +7,11 @@ const MainContainer = (props) => {
     // display: 'flex',
     height: '100%',
     width: '100%',
-    background: '#54494B',
+    background: '#045762', //dark green
+    overflow: 'hidden'
   };
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} id="Create_Display">
       <Create />
       <ResultsDisplay result={props.result} />
     </div>

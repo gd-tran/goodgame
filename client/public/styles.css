@@ -1,0 +1,57 @@
+body {
+    background-color: #f3f2da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 99%;
+    height: 99%;
+}
+
+#main{ 
+    border: 1px;
+    border: blanchedalmond;
+    
+}
+
+#main input[type=text]{
+     width: 300px;
+     padding: 10px;
+     margin:5px;
+     border-radius: 5px;
+}
+
+#main input[type=submit]{
+    width : 100px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 5px;
+    color: rgb(175, 47, 175);
+    background-color: black;
+}
+
+h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dashboard {
+    display: flex;
+}
+
+#result, #formed {
+    border: 10px solid #045762;
+
+}
+
+#theBox {
+    border: 10px solid #045762 ;
+    background-color: blue;
+}
+
+#Create_Display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

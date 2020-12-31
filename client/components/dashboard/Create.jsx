@@ -1,9 +1,9 @@
 import React from 'react';
 
 const createStyle = {
-  height: '500px',
+  height: '200px',
   width: '500px',
-  background: '#7E8287',
+  background: '#86aba1',
 };
 
 class Create extends React.Component {
@@ -41,8 +41,8 @@ class Create extends React.Component {
 
   render() {
     return (
-      <div style={createStyle}>
-        <h2>Add a new game review!</h2>
+      <div style={createStyle} id="formed">
+        <h2>Add a New Game Review!</h2>
         <form>
           <label>
             Title:
