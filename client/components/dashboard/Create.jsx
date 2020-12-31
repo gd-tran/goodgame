@@ -42,7 +42,7 @@ class Create extends React.Component {
   render() {
     return (
       <div style={createStyle}>
-        <h1>Create</h1>
+        <h2>Add a new game review!</h2>
         <form>
           <label>
             Title:
