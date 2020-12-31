@@ -13,7 +13,7 @@ const ResultsDisplay = (props) => {
   };
   return (
     <div style={resultsDisplayStyle}>
-      <h1>ResultsDisplay</h1>
+      <h1>All Game Reviews</h1>
       {resultToDisplay}
     </div>
   );
