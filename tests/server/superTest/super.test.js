@@ -20,7 +20,6 @@ describe('Testing Different Routes', () => {
                     password : 'theBest'
                 })
             })
-
             expect(response.statusCode).toEqual(200)
         })
     })
