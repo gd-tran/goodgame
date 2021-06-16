@@ -1,7 +1,7 @@
-const db = require('../models/dbModels.js')
+const db = require('../models/dbModels.js');
 
 // queries should only be to the user Table
-const userController = {}
+const userController = {};
 
 userController.createUser = (req, res, next) => {
   // request body should have username and password
@@ -21,7 +21,6 @@ userController.verifyUser = (req, res, next) => {
   const findQuery = `SELECT * FROM users WHERE username=$1 AND password=$2`;
   
   db.query(findQuery, [username, password], (err, response) => {
-    console.log(response)
     if (err) return res.json('Wrong Username or Password');
     res.locals.username = username;
     return next();
